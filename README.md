@@ -2,9 +2,9 @@
 
 This project studies the factors affecting the popularity of Google Play mobile applications using clustering and classification techniques, to find out the differences between popular and non-popular apps. We defined the popularity of a mobile application using a score calculated with equal weightage of two factors, namely a mobile application’s rating and its number of installations.  
 
-Using the following web-scraped data of Google Playstore apps from Kaggle (https://www.kaggle.com/lava18/google-play-store-apps), we analysed the popularity of 816 android mobile applications in terms of (1) the quantitative statistics and objective figures and (2) the qualitative factors drawn from user reviews. 
+We employed two datasets consisting of web-scraped data of Google Playstore apps and their user reviews from Kaggle (https://www.kaggle.com/lava18/google-play-store-apps) to analyse the popularity of 816 android mobile applications in terms of (1) the quantitative statistics and objective figures and (2) the qualitative factors drawn from user reviews. 
 
-To the kaggle dataset, we performed various Exploratory Data Analysis (EDA) procedures, including but not limited to data cleaning, feature engineering, and a 80-20 train-test split of the data. The codes for this section are located in the EDA file. 
+To the datasets, we performed various Exploratory Data Analysis (EDA) procedures, including but not limited to data cleaning, feature engineering, and a 80-20 train-test split of the data. The codes for this section are located in the EDA file. 
 
 A range of 13 classification models, including Decision Tree, Naive Bayes, AdaBoost, and more, were trained and applied to the quantitative figures, and the feature importances of each model are obtained using SHapley Additive exPlanations (SHAP). From the classification results, we grouped the models into three tiers based on their f1 scores to compare their performances, and identified the top 3 feature importances across the models. The RQ1 file contains the complete codes of all the classification models we implemented. 
 
